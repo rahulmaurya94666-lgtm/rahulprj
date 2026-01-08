@@ -3,73 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Restaurant page</title>
 </head>
 <body>
+    
     <style>
-        body {
+        * {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: whitesmoke;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
         }
 
+        body {
+            background: #ffffff;
+            color: #222;
+        }
+
+        /* Header */
         header {
-            background: #1e88e5;
-            color: white;
-            padding: 15px 20px;
-            text-align: center;
+            width: 100%;
+            padding: 18px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #0f172a;
         }
 
-        nav {
-            background: #0d47a1;
-            padding: 10px;
-            text-align: center;
+        header h2 {
+            color: #38bdf8;
+            font-size: 26px;
         }
 
         nav a {
-            color: white;
+            color: #e5e7eb;
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
+            margin-left: 30px;
+            font-size: 15px;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #38bdf8;
         }
 
-        .banner {
-            background: url(metro\ video.png) center/cover;
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .cards {
+        /* Hero Section */
+        .hero {
+            height: 85vh;
             display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 60px;
+            background: #f8fafc;
         }
 
-        .card {
-            background: white;
-            width: 250px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        .hero-text {
+            max-width: 50%;
         }
 
-        footer {
-            background: #1e88e5;
+        .hero-text h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text span {
+            color: #38bdf8;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #475569;
+        }
+
+        .hero-text button {
+            padding: 14px 34px;
+            background: black;
             color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 6px;
+        }
+
+        .hero-text button:hover {
+            background: #020617;
+        }
+
+        /* Image */
+        .hero-img img {
+            width: 420px;
+            border-radius: 12px;
+        }
+
+        /* Footer */
+        footer {
             text-align: center;
-            padding: 15px;
-            margin-top: 20px;
+            padding: 14px;
+            background: #0f172a;
+            color: #cbd5f5;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -77,43 +109,26 @@
 <body>
 
     <header>
-        <h1>Delhi Metro City</h1>
-        <p>Fast • Safe • Reliable</p>
+        <h2>🚇 Metro Restaurant</h2>
+
     </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Routes</a>
-        <a href="#">Timings</a>
-        <a href="#">Fare</a>
-        <a href="#">Contact</a>
-    </nav>
-
-    <div class="banner">
-        <h2 align="right">Welcome to City Metro</h2>
-        <p align="right">Your daily travel partner</p>
-    </div>
-
-    <div class="section">
-        <h2>Latest Updates</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>Metro Timeing</h3>
-                <p>First Metro: 5:30 AM | Last Metro: 11:30 PM</p>
-            </div>
-
-            <div class="card">
-                <h3>Smart Card Discounts</h3>
-                <p>Get 10% discount on every journey with Smart Cards</p>
-            </div>
-
-            <div class="card">
-                <h3>Travel Safety Rules</h3>
-                <p>Face masks are mandatory inside metro premises</p>
-            </div>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Fast • Fresh • <span>Metro Taste</span></h1>
+            <p>
+                Metro Restaurant is designed for people who live a fast, modern, and urban lifestyle.
+                Inspired by the efficiency of metro cities, we focus on serving fresh, high-quality food with
+                quick service and a comfortable dining experience. Our clean interiors, simple menu design,
+                and carefully selected ingredients reflect our commitment to hygiene, taste, and consistency.
+            </p>
+            <button>Explore Menu</button>
         </div>
-    </div>
 
+        <div class="hero-img">
+            <img src="restaurant.jpg" alt="Metro Food">
+        </div>
+    </section>
 
 
 </body>
