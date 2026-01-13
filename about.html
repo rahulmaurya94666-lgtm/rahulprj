@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> Gaming Features</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body{
+  background:black;
+  color:#fff;
+}
+.hero h1{
+    font-size:80px;
+    color:#ff005c;
+    letter-spacing:5px;
+    margin-bottom:18px;
+}
+    
+/* ===== Container ===== */
+.container{
+  max-width:1200px;
+  margin:60px auto;
+  padding:20px;
+}
+
+/* ===== Grid ===== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+/* ===== Card ===== */
+.card{
+  background:linear-gradient(145deg,#151826,#0f1220);
+  border-radius:14px;
+  padding:25px;
+  min-height:260px;
+  position:relative;
+  box-shadow:0 15px 40px rgba(0,0,0,0.6);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 20px 60px rgba(255,0,60,0.25);
+}
+
+/* ===== Image Box ===== */
+.card img{
+  width:300px;
+  height:300px;
+  object-fit:contain;
+  margin-bottom:20px;
+  filter:drop-shadow(0 0 10px rgba(255,0,60,0.4));
+}
+
+/* ===== Title ===== */
+.card h3{
+  font-size:18px;
+  margin-bottom:10px;
+  color:#fff;
+}
+
+/* ===== Text ===== */
+.card p{
+  font-size:14px;
+  color:#b8b8c7;
+  line-height:1.6;
+}
+
+/* ===== Read More ===== */
+.read-more{
+  position:absolute;
+  bottom:20px;
+  left:25px;
+  color:#ff003c;
+  font-size:13px;
+  letter-spacing:1px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.read-more span{
+  transition:0.3s;
+}
+
+.card:hover .read-more span{
+  transform:translateX(6px);
+}
+</style>
+</head>
+
+<body>
+  <section class="hero">
+    <h1 align="center">Games zOne</h1>
+
+<div class="container">
+  <div class="grid">
+    
+
+    <div class="card">
+      <img src="apex legend.jpg">
+      <h3>Apex Legends</h3>
+      <p>Apex Legends: A fast-paced battle royale where legendary heroes compete for glory in an ever-evolving arena.</p>
+      
+    </div>
+
+    <div class="card">
+      <img src="god war.jpg">
+      <h3>God of War </h3>
+      <p>“God of War: A brutal journey of a fallen god fighting destiny, monsters, and himself.”</p>
+      
+    </div>
+
+    <div class="card">
+      <img src="tomb raider.webp">
+      <h3>Tomb Raider</h3>
+      <p>Tomb Raider: Lara Croft braves deadly tombs and ancient secrets across 
+ 🏹</p>
+      
+    </div>
+
+    <div class="card">
+      <img src="The Legend of Zelda.avif">
+      <h3>The Legend of Zelda </h3>
+      <p>The Legend of Zelda: A heroic journey where Link battles evil, solves ancient puzzles</p>
+      
+    </div>
+
+    <div class="card">
+      <img src="Borderlands.avif">
+      <h3> Borderlands </h3>
+      <p>Borderlands will undoubtedly appeal to all sorts of gamers. If you visit this one</p>
+      
+    </div>
+
+    <div class="card">
+      <img src="candy crash.jpg">
+      <h3>king</h3>
+      <p>I think we are all familiar with the home of the famous game Candy Crush that</p>
+      
+    </div>
+
+  </div>
+</d
