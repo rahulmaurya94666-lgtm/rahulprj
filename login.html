@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+  url('https://i.pinimg.com/1200x/24/b4/a1/24b4a1a3db937ab7254575f70922a103.jpg');
+  background-size:cover;
+  background-position:center;
+}
+
+.login-container{
+  width:350px;
+  padding:40px;
+  background:rgba(20,20,40,0.9);
+  border-radius:15px;
+  box-shadow:0 0 25px rgba(0,255,255,0.4);
+  text-align:center;
+}
+
+.login-container h2{
+  margin-bottom:30px;
+  color:#00f7ff;
+}
+
+.input-box{
+  margin-bottom:20px;
+  text-align:left;
+}
+
+.input-box label{
+  font-size:14px;
+}
+
+.input-box input{
+  width:100%;
+  padding:10px;
+  margin-top:5px;
+  border:none;
+  border-radius:8px;
+  outline:none;
+  background:#1f1f35;
+  color:white;
+}
+
+.input-box input:focus{
+  border:1px solid #00f7ff;
+}
+
+.btn{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:30px;
+  background:#00f7ff;
+  color:black;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#00c3cc;
+}
+
+.extra{
+  margin-top:15px;
+  font-size:13px;
+}
+
+.extra a{
+  color:#00f7ff;
+  text-decoration:none;
+}
+</style>
+</head>
+<body>
+
+<div class="login-container">
+  <h2>Login</h2>
+  <form>
+    <div class="input-box">
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="input-box">
+      <label>Password</label>
+      <input type="password" placeholder="Enter your password" required>
+    </div>
+
+    <button type="submit" class="btn">Login</button>
+
+    <div class="extra">
+      <p>Don't have an account? <a href="#">Register</a></p>
+      <p><a href="#">Forgot Password?</a></p>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
