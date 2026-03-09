@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MCU Movies</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="jquery-4.0.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".movies").hide();
+
+            $("#btn").click(function () {
+                $(".movies").slideDown(1000);
+            });
+
+            $(".card").click(function () {
+                $(this).find(".info").slideToggle();
+            });
+
+        });
+        $("document").ready(function () {
+            $("#btn").click(function () {
+                alert("WELCOME TO MCS MOVIES!");
+            });
+        });
+
+
+
+    </script>
+    
+</head>
+
+<body>
+
+    <h1>MCU MOVIES</h1>
+
+    <input type="button" value="show" id="btn">
+
+    <div class="movies">
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/54/42/7c/54427c51f5c8b9b21cc549785a5c009e.jpg">
+            <h3>Iron Man</h3>
+            <div class="info">First MCU movie released in 2008.</div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/avif/1200x/3c/b4/28/3cb428f7b5e7246ee9c2727862e423e4.avf">
+            <h3>The Avengers</h3>
+            <div class="info">Earth's Mightiest Heroes team up.</div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/avif/736x/2f/bf/02/2fbf02248319c6e9152b079234b63fa4.avf">
+            <h3>Infinity War</h3>
+            <div class="info">Avengers battle the powerful Thanos.</div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/87/6d/92/876d924e14276c0eb1e05b685ba5e104.jpg">
+            <h3>Endgame</h3>
+            <div class="info">Final battle to save the universe.</div>
+        </div>
+
+    </div>
+
+    <script>
+
+
+
+
+    </script>
+
+</body>
+
+</html>
